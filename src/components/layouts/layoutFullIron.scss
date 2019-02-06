@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Major+Mono+Display|Righteous&subset=cyrillic,cyrillic-ext|Righteous&subset=cyrillic,cyrillic-ext|Palanquin+Dark:400,500,600,700');
+
+
+
+$colorMain: #FFFAF1;
+$coloraAccent: #DB3D3D;
+$colorAccentDark: #A81E1C;
+$colorAccentLight: #E27979;
+$colorDark:#422A26;
+$colorWhite: #FFFFFF;
+$colorGrey: grey;
+
+html {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+body {
+    max-width: 1440px;
+}
+
+.font {
+    font-family: 'IBM Plex Serif', serif;
+}
