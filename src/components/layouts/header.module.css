@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Palanquin+Dark:400,500,600,700");
+.header div {
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.header div .text {
+  color: #A81E1C;
+}
+
+.header div .text a {
+  color: #A81E1C;
+  text-decoration: none;
+}
+
+.header div .text a a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header div .text a :visited {
+  color: #FFFFFF;
+  color: white;
+}
+
+.header div .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 300px;
+  margin-right: 2.5em;
+}
+
+.header div .links .text {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-decoration: none;
+  position: relative;
+}
+
+.header div .links .text:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header div .links .text:hover:before {
+  color: black;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*# sourceMappingURL=header.module.css.map */

@@ -23,7 +23,7 @@ const Layout = ({ children }, props) => (
     render={data => (
      
       <div className={styles.font}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header className={styles.header} siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,

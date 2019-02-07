@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Palanquin+Dark:400,500,600,700");
+a:-webkit-any-link {
+  color: #A81E1C;
+}
+a:-moz-any-link {
+  color: #A81E1C;
+}
+a:any-link {
+  color: #A81E1C;
+}
+
+.pageContainer {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  -ms-grid-columns: '12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ';
+      grid-template-columns: '12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ';
+  -ms-grid-rows: '80px 60px 100px 60px 100px 100px 100px 100px 100px 100px 100px';
+      grid-template-rows: '80px 60px 100px 60px 100px 100px 100px 100px 100px 100px 100px';
+  grid-gap: 16;
+  -webkit-box-align: 'center';
+      -ms-flex-align: 'center';
+          align-items: 'center';
+  background-color: '#FFFAF1';
+  height: "100vh";
+  width: "100%";
+}
+
+.title {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 49;
+  margin: 0;
+  padding: 0;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.subTitle {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  height: 50%;
+  text-align: center;
+  font-size: 42px;
+}
+
+.subTitleAbout {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 5;
+  text-align: center;
+  font-size: 25px;
+}
+
+.subTitleSkills {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 5;
+  font-size: 16px;
+  text-align: center;
+}
+
+.image {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 7 / 8 / 9;
+}
+
+.person {
+  width: 351.5px;
+  height: 130.2px;
+  background: #fffaf1;
+  border: 1px solid #95989a;
+}
+
+.person#1 {
+  grid-area: "2 / 4 / 3 / 5";
+}
+/*# sourceMappingURL=index.module.css.map */

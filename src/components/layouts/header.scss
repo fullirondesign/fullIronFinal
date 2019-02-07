@@ -1,0 +1,36 @@
+@import 'variables';
+
+.header div {
+    // background: rgba(27, 18, 18, 0.767);
+    height: 4em;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    .text {
+        color: $colorAccentDark;
+       
+        a {
+            color: $colorAccentDark;
+            text-decoration: none;
+            a:-webkit-any-link {
+                color: white;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            :visited {
+                color: $colorWhite;
+                color: white;
+            }
+        }
+    }
+    .links {
+        display: flex;
+        min-width: 300px;
+        margin-right: 2.5em;
+        .text {
+            @include link(16px);
+        }
+    }
+}

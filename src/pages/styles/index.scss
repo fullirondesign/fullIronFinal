@@ -1,0 +1,82 @@
+@import '../../components/layouts/variables';
+
+a:any-link {
+  // border: 1px solid blue; //TODO: delete 
+  color: $colorAccentDark;
+}
+
+
+
+
+  .pageContainer {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: '12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ';
+    grid-template-rows: '80px 60px 100px 60px 100px 100px 100px 100px 100px 100px 100px';
+    grid-gap: 16;
+    align-items: 'center';
+    background-color: '#FFFAF1';
+    height: "100vh";
+    width: "100%";
+    // margin: '9.7%, 9.7%, 0, 9.7%',
+  };
+  .title {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 5;
+
+    align-self: center;
+    text-align: center;
+    align-items: center;
+
+    font-size: 49;
+    margin: 0;
+    padding: 0;
+    @include fontDisplay;
+
+  };
+
+  .subTitle {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 5;
+    height: 50%;
+    text-align: center;
+    font-size: 42px;
+  };
+  .subTitleAbout {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 5;
+
+    text-align: center;
+    font-size: 25px;
+  };
+  .subTitleSkills {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 5;
+
+    font-size: 16px;
+    text-align: center,
+  };
+  .image {
+    grid-area: 4 / 7 / 8 / 9;
+  };
+  .person {
+    //  minHeight: '50px',
+    //  minWidth: '50px',
+      width: 351.5px;
+      height: 130.2px;
+      background: #fffaf1;
+      border: 1px solid #95989a;
+
+    &#1 {
+      grid-area: "2 / 4 / 3 / 5",
+    }
+  }
