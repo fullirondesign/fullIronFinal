@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Palanquin+Dark:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic");
 
 
 
@@ -14,9 +14,11 @@ $colorGrey: grey;
     font-family: 'IBM Plex Serif', serif;
 }
 @mixin fontDisplay {
-    font-family: 'Palanquin Dark', sans-serif;
-    font-weight: 500;
-    font-size: 3em;
+    font-family: 'Righteous', cursive;
+    font-weight: 700;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 //standart link formating

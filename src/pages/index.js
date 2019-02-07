@@ -31,10 +31,10 @@ class IndexPage extends Component {
               <Logo />
             </div>
             
-              <h1 className={styles.title}> Full Iron</h1>
-              <h2 className={styles.subTitle}>design</h2>
-              <h3 className={styles.subTitleAbout}>web. dev. studio</h3>
-              <h4 className={styles.subTitleSkills}>React - Node - Graphql - Headless CMS - Identity - UX UI</h4>
+              <div className={styles.title}> Full Iron</div>
+              <div className={styles.subTitle}>design</div>
+              <div className={styles.subTitleAbout}>web. dev. studio</div>
+              <div className={styles.subTitleSkills}>React - Node - Graphql - Headless CMS - Identity - UX UI</div>
 
               <div className="person" id="1"></div>
               <div className="person" id="2"></div>

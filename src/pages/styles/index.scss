@@ -10,16 +10,17 @@ a:any-link {
 
   .pageContainer {
     display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    grid-template-columns: '12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ';
-    grid-template-rows: '80px 60px 100px 60px 100px 100px 100px 100px 100px 100px 100px';
-    grid-gap: 16;
-    align-items: 'center';
-    background-color: '#FFFAF1';
-    height: "100vh";
-    width: "100%";
-    // margin: '9.7%, 9.7%, 0, 9.7%',
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    // grid-template-columns: 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 36px 64px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
+    // height: 100vh;
+    // width: 100%;
+    align-items: center;
+    // grid-gap: 16;
+    // background-color: rgba(158, 158, 158, 0.171);
+    margin: 0 9.7% 0 9.7%;
   };
   .title {
     grid-row-start: 1;
@@ -31,10 +32,11 @@ a:any-link {
     text-align: center;
     align-items: center;
 
-    font-size: 49;
+    // font-size: 49px;
     margin: 0;
     padding: 0;
     @include fontDisplay;
+    color: $colorAccentDark;
 
   };
 
@@ -43,11 +45,14 @@ a:any-link {
     grid-column-start: 2;
     grid-row-end: 3;
     grid-column-end: 5;
-    height: 50%;
+    
     text-align: center;
-    font-size: 42px;
+    // align-self: center;
+    font-size: 2.5rem;
+    color: $colorAccentDark;
   };
   .subTitleAbout {
+    color: $colorAccentDark;
     grid-row-start: 3;
     grid-column-start: 2;
     grid-row-end: 4;
@@ -55,18 +60,23 @@ a:any-link {
 
     text-align: center;
     font-size: 25px;
+    letter-spacing: 0.1em;
+
+    align-self: end;
   };
   .subTitleSkills {
+    color: $colorAccentDark;
     grid-row-start: 4;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-end: 5;
-    grid-column-end: 5;
+    grid-column-end: 6;
 
     font-size: 16px;
-    text-align: center,
+    text-align: center;
+    letter-spacing: 0.1em;
   };
   .image {
-    grid-area: 4 / 7 / 8 / 9;
+    grid-area: 6 / 7 / 7 / 9;
   };
   .person {
     //  minHeight: '50px',
@@ -77,6 +87,6 @@ a:any-link {
       border: 1px solid #95989a;
 
     &#1 {
-      grid-area: "2 / 4 / 3 / 5",
+      grid-area: 2 / 4 / 3 / 5,
     }
   }
