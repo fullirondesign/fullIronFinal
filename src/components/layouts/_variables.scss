@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Raleway");
 
 
 
@@ -12,13 +12,18 @@ $colorGrey: grey;
 
 @mixin font {
     font-family: 'IBM Plex Serif', serif;
+    
+}
+@mixin fontDisplaySub {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .06em;
 }
 @mixin fontDisplay {
     font-family: 'Righteous', cursive;
     font-weight: 700;
     font-size: 2.9em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.em;
 }
 
 //standart link formating
@@ -29,7 +34,7 @@ $colorGrey: grey;
     font-weight: 200;
     text-decoration: none;
     position: relative;
-    &:before {
+    :before {
         position: absolute;
         width: 100%;
         height: 2px;
@@ -43,7 +48,7 @@ $colorGrey: grey;
         transition: all 0.3s ease-in-out 0s;
     };
     
-      &:hover:before {
+      :hover:before {
           color:black;
             visibility: visible;
             -webkit-transform: scaleX(1);

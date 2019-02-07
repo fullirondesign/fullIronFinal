@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 
 import Layout from "../components/layouts/layout";
 // import Image from "../components/image";
@@ -8,6 +8,7 @@ import SEO from "../components/seo";
 import { withStyles } from '@material-ui/core/styles';
 import Logo from "../components/logo";
 import styles from "./styles/index.module.css"
+
 
 
 console.log("styles :", {styles})
@@ -27,9 +28,7 @@ class IndexPage extends Component {
      
         <div className={styles.pageContainer}>
             
-            <div className={styles.image}>
-              <Logo />
-            </div>
+            
             
               <div className={styles.title}> Full Iron</div>
               <div className={styles.subTitle}>design</div>
@@ -39,7 +38,15 @@ class IndexPage extends Component {
               <div className="person" id="1"></div>
               <div className="person" id="2"></div>
 
-              {/* <Link to="/page-2/">Go to page 2</Link> */}
+              
+
+
+
+              <div className={styles.image}>
+                <Link className={styles.imageLink}
+                  to="/page-2/">Go to page 2</Link> 
+                <Logo />
+              </div>
             
         </div>
 

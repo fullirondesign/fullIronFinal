@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Raleway");
 a:-webkit-any-link {
   color: #A81E1C;
 }
@@ -16,8 +16,8 @@ a:any-link {
   grid-row-gap: 16px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 36px 64px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
-      grid-template-rows: 36px 64px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
+  -ms-grid-rows: 86px 52px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
+      grid-template-rows: 86px 52px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -44,7 +44,7 @@ a:any-link {
   font-weight: 700;
   font-size: 2.9em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
   color: #A81E1C;
 }
 
@@ -58,6 +58,8 @@ a:any-link {
   text-align: center;
   font-size: 2.5rem;
   color: #A81E1C;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .06em;
 }
 
 .subTitleAbout {
@@ -90,11 +92,72 @@ a:any-link {
 }
 
 .image {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 7;
   -ms-grid-column-span: 2;
-  grid-area: 6 / 7 / 7 / 9;
+  grid-area: 5 / span 2 / 7 / 9;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 300px;
+}
+
+.image a:-webkit-any-link {
+  align-self: flex-end;
+  position: relative;
+  top: 30px;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-decoration: none;
+  position: relative;
+}
+
+.image a:-moz-any-link {
+  align-self: flex-end;
+  position: relative;
+  top: 30px;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-decoration: none;
+  position: relative;
+}
+
+.image a:any-link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  top: 30px;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-decoration: none;
+  position: relative;
+}
+
+.image a:-webkit-any-link :hover {
+  color: black;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.image a:-moz-any-link :hover {
+  color: black;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.image a:any-link :hover {
+  color: black;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .person {
