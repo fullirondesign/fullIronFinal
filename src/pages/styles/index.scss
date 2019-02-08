@@ -136,25 +136,27 @@ a:any-link {
 
 // About section ------
 .about {
-  grid-area: 7 / 1 / auto / 6;
+  // grid-area: 7 / 1 / auto / 6;
 
-  // width: 718.03px;
-  // height: 308.51px;
-  background: url(/images/About.svg);
-  
-    // width: 100%;
-    // height: 56px;
-    // box-sizing: content-box;
+  width: 718.03px;
+  height: 308.51px;
+  // background: url(/images/About.svg);
+    
+
     padding-top: 15px;
     position: relative;
     // background: red;
-    color: white;
+    color: black;
     font-size: 11px;
     letter-spacing: 0.2em;
-    text-align: center;
+    
     text-transform: uppercase;
+    &Text {
+      grid-area: 7 / 1 / 9 / 7;
+      text-align: center;
+    }
     &SVG {
-      width: 100%;
+      grid-area: 7 / 1 / auto / 6;
     }
   }
  

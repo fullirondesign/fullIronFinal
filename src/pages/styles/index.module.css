@@ -241,21 +241,29 @@ a:any-link {
 }
 
 .about {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: 7 / 1 / auto / 6;
-  background: url(/images/About.svg);
+  width: 718.03px;
+  height: 308.51px;
   padding-top: 15px;
   position: relative;
-  color: white;
+  color: black;
   font-size: 11px;
   letter-spacing: 0.2em;
-  text-align: center;
   text-transform: uppercase;
 }
 
+.aboutText {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 7 / 1 / 9 / 7;
+  text-align: center;
+}
+
 .aboutSVG {
-  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 7 / 1 / auto / 6;
 }
 
 .LinkCard .content {

@@ -11,6 +11,7 @@ import styles from "./styles/index.module.css"
 import classNames from "classnames"
 
 import About from "../images/About.svg"
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 
@@ -19,10 +20,15 @@ console.log("styles :", {styles})
 
 
 class IndexPage extends Component {
-  state = {};
+  state = {
+    aboutText: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ad fugit deleniti saepe!",
+    transformAbout: '',
+  };
+
+  handleTransformAbout = () => { this.setState({ transformAbout:'scale(2 1.5)' }) }
 
   render() {
-    
+    const { aboutText, transformAbout } = this.state
     console.log("index.js props", styles)
     
     return (
@@ -44,10 +50,10 @@ class IndexPage extends Component {
 
               </div>
 
-              <div className={classNames([styles.about])}>
-                <About className={classNames([styles.aboutSVG])}/>
               
-              </div>
+                <About transform={transformAbout} className={classNames([styles.about, styles.aboutSVG])} />
+                <div className={classNames([styles.aboutText, styles.about])}>some text</div>
+              
               
 
               
