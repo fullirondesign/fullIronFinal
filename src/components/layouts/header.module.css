@@ -55,7 +55,21 @@
   position: relative;
 }
 
-.header div .links .text :hover {
+.header div .links .text :before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header div .links .text :hover:before {
   color: black;
   visibility: visible;
   -webkit-transform: scaleX(1);

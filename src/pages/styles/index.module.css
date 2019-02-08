@@ -44,7 +44,7 @@ a:any-link {
   font-weight: 700;
   font-size: 2.9em;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.1em;
   color: #A81E1C;
 }
 
@@ -106,6 +106,7 @@ a:any-link {
   align-self: flex-end;
   position: relative;
   top: 30px;
+  z-index: 2;
   font-family: 'IBM Plex Serif', serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -118,6 +119,7 @@ a:any-link {
   align-self: flex-end;
   position: relative;
   top: 30px;
+  z-index: 2;
   font-family: 'IBM Plex Serif', serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -131,6 +133,7 @@ a:any-link {
       align-self: flex-end;
   position: relative;
   top: 30px;
+  z-index: 2;
   font-family: 'IBM Plex Serif', serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -139,21 +142,63 @@ a:any-link {
   position: relative;
 }
 
-.image a:-webkit-any-link :hover {
+.image a:-webkit-any-link :before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.image a:-moz-any-link :before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.image a:any-link :before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.image a:-webkit-any-link :hover:before {
   color: black;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-.image a:-moz-any-link :hover {
+.image a:-moz-any-link :hover:before {
   color: black;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-.image a:any-link :hover {
+.image a:any-link :hover:before {
   color: black;
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -169,5 +214,76 @@ a:any-link {
 
 .person#1 {
   grid-area: 0.03333;
+}
+
+.LinkCard .content {
+  background-color: #FFFAF1 !important;
+  border-radius: 2px;
+}
+
+.LinkCard:before, .LinkCard:after {
+  border-radius: 3px;
+}
+
+.LinkCard:before {
+  background-color: #A81E1C !important;
+  border: #A81E1C solid 1px;
+}
+
+.LinkCard:after {
+  background-color: #DB3D3D !important;
+  border: #A81E1C solid 1px;
+}
+
+.stacked {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  will-change: transform;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.stacked:before, .stacked:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.stacked:before {
+  z-index: -1;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.stacked:after {
+  z-index: -2;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.stacked:hover {
+  -webkit-transform: translate(-2.5px, 0) rotate(-2.5deg);
+          transform: translate(-2.5px, 0) rotate(-2.5deg);
+}
+
+.stacked:hover:before {
+  -webkit-transform: translate(2.5px, 0) rotate(2.5deg);
+          transform: translate(2.5px, 0) rotate(2.5deg);
+}
+
+.stacked:hover:after {
+  -webkit-transform: translate(5px, 0) rotate(5deg);
+          transform: translate(5px, 0) rotate(5deg);
 }
 /*# sourceMappingURL=index.module.css.map */

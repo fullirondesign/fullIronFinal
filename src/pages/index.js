@@ -8,6 +8,7 @@ import SEO from "../components/seo";
 import { withStyles } from '@material-ui/core/styles';
 import Logo from "../components/logo";
 import styles from "./styles/index.module.css"
+import classNames from "classnames"
 
 
 
@@ -19,7 +20,7 @@ class IndexPage extends Component {
   state = {};
 
   render() {
-    // const { styles } = styles;
+    
     console.log("index.js props", styles)
     
     return (
@@ -38,8 +39,16 @@ class IndexPage extends Component {
               <div className="person" id="1"></div>
               <div className="person" id="2"></div>
 
-              
 
+              
+              
+              <div href="#" className = {classNames([styles.LinkCard, styles.stacked])}>
+                    <div className={styles.content}>
+                     <code className={styles.linkText}>
+                      Link Animated
+                      </code>
+                    </div>
+              </div>
 
 
               <div className={styles.image}>
