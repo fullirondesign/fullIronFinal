@@ -8,167 +8,246 @@ a:any-link {
 
 
 
-  .pageContainer {
-    display: grid;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    // grid-template-columns: 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 86px 52px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
-    // height: 100vh;
-    // width: 100%;
-    align-items: center;
-    // grid-gap: 16;
-    // background-color: rgba(158, 158, 158, 0.171);
-    margin: 0 9.7% 0 9.7%;
-  };
-  .title {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-row-end: 2;
-    grid-column-end: 5;
+.pageContainer {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  // grid-template-columns: 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 86px 52px 56px 56px 100px 100px 100px 220px 220px 100px 100px;
+  // height: 100vh;
+  // width: 100%;
+  align-items: center;
+  // grid-gap: 16;
+  // background-color: rgba(158, 158, 158, 0.171);
+  margin: 0 9.7% 0 9.7%;
+}
 
-    align-self: center;
-    text-align: center;
-    align-items: center;
 
-    // font-size: 49px;
-    margin: 0;
-    padding: 0;
-    @include fontDisplay;
-    color: $colorAccentDark;
 
-  };
+.title {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 5;
 
-  .subTitle {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 3;
-    grid-column-end: 5;
-    
-    text-align: center;
-    // align-self: center;
-    font-size: 2.5rem;
-    color: $colorAccentDark;
-    @include fontDisplaySub;
-  };
-  .subTitleAbout {
-    color: $colorAccentDark;
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-row-end: 4;
-    grid-column-end: 5;
+  align-self: center;
+  text-align: center;
+  align-items: center;
 
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 0.1em;
+  // font-size: 49px;
+  margin: 0;
+  padding: 0;
+  @include fontDisplay;
+  color: $colorAccentDark;
 
-    align-self: end;
-  };
-  .subTitleSkills {
-    color: $colorAccentDark;
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-row-end: 5;
-    grid-column-end: 6;
+}
 
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.1em;
-  };
-  .image {
-    grid-area: 5 / span 2 / 7 / 9;
+
+
+.subTitle {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 5;
+
+  text-align: center;
+  // align-self: center;
+  font-size: 2.5rem;
+  color: $colorAccentDark;
+  @include fontDisplaySub;
+}
+
+
+
+.subTitleAbout {
+  color: $colorAccentDark;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 5;
+
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+
+  align-self: end;
+}
+
+
+
+.subTitleSkills {
+  color: $colorAccentDark;
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 6;
+
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+
+
+.image {
+  grid-area: 5 / span 2 / 7 / 9;
+  align-self: flex-end;
+  width: 300px;
+
+  a:any-link {
     align-self: flex-end;
-    width: 300px;
-    a:any-link {
-      align-self: flex-end;
-      position: relative;
-      top: 30px;
-      z-index: 2;
-      @include link(16px);
-    }
-  };
+    position: relative;
+    top: 30px;
+    z-index: 2;
+    @include link(16px);
+  }
+}
+
+
+// Cards with pictures and names of Personal
+.persons {
+  grid-area: 5 / 1 / 6 / 6;
+  height: 100%;
+  height: 8em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 
+  grid-column-gap: 16px;
   .person {
     //  minHeight: '50px',
     //  minWidth: '50px',
-      width: 351.5px;
-      height: 130.2px;
-      background: #fffaf1;
-      border: 1px solid #95989a;
+    width: calc(1fr-8px);
+    height: 100%;
+    background: #fffaf1;
+    border: 1px solid #95989a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    &1 {
+      // grid-area: 4 / 1 / 8 / 4;
+      // background: red;
+    }
 
-    &#1 {
-      grid-area: 2 / 4 / 3 / 5,
+    &2 {}
+  }
+}
+
+// About section ------
+.about {
+  grid-area: 7 / 1 / auto / 6;
+
+  // width: 718.03px;
+  // height: 308.51px;
+  background: url(/images/About.svg);
+  
+    // width: 100%;
+    // height: 56px;
+    // box-sizing: content-box;
+    padding-top: 15px;
+    position: relative;
+    // background: red;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    &SVG {
+      width: 100%;
     }
   }
+ 
 
 
 
-  
+
+
+
+
 // -----Link Amimation------------------------------------------------------------
 // -----link container -------
 .LinkCard {
   $card-color-1: $colorMain;
-  $card-color-2: $colorAccentDark;;
+  $card-color-2: $colorAccentDark;
+  ;
   $card-color-3: $coloraAccent;
-  
+
   .content {
-      background-color: $card-color-1 !important;            
-      border-radius: 2px;
+    background-color: $card-color-1 !important;
+    border-radius: 2px;
   }
-  &:before, &:after {
-      border-radius: 3px;
+
+  &:before,
+  &:after {
+    border-radius: 3px;
   }
+
   &:before {
-      background-color: $card-color-2 !important;
-      border: $card-color-2 solid 1px;
-      
+    // background-color: $card-color-2 !important;
+    border: $card-color-2 solid 1px;
+
   }
-   &:after {
-      background-color: $card-color-3 !important;
-      border: $card-color-2 solid 1px;
+
+  &:after {
+    // background-color: $card-color-3 !important;
+    border: $card-color-2 solid 1px;
   }
+
   .linkText {
     // background-color: $card-color-3 !important;
     // border: $card-color-2 solid 1px;
-  };
+  }
+
+  ;
 }
 
 // ----link animation using transition-------
 $bg-color: $colorAccentDark;
 $animation-timing: 0.3s;
 $animation-ease: ease-in-out;
-$animation-ease-bounce: cubic-bezier(0.175,  0.885, 0.320, 1.275);
+$animation-ease-bounce: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
 .stacked {
   position: relative;
   transition: transform $animation-timing $animation-ease;
   will-change: transform;
   transform-origin: center bottom;
-  
+
   &:before,
   &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      // background-color: $coloraAccent;
-      transition: transform $animation-timing $animation-ease;
-      will-change: transform;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // background-color: $coloraAccent;
+    transition: transform $animation-timing $animation-ease;
+    will-change: transform;
   }
+
   &:before {
-      z-index: -1;
-      transform-origin: center bottom;
+    z-index: -1;
+    transform-origin: center bottom;
   }
+
   &:after {
-      z-index: -2;
-      transform-origin: center bottom;
+    z-index: -2;
+    transform-origin: center bottom;
   }
+
   &:hover {
-      transform: translate(-2.5px, 0) rotate(-2.5deg);
-      &:before { transform: translate(2.5px, 0) rotate(2.5deg); }
-      &:after { transform: translate(5px, 0) rotate(5deg); }
+    transform: translate(-2.5px, 0) rotate(-2.5deg);
+
+    &:before {
+      transform: translate(2.5px, 0) rotate(2.5deg);
+    }
+
+    &:after {
+      transform: translate(5px, 0) rotate(5deg);
+    }
   }
 }
+
 // ----END of Link Animation--------

@@ -205,15 +205,57 @@ a:any-link {
   transform: scaleX(1);
 }
 
-.person {
-  width: 351.5px;
-  height: 130.2px;
-  background: #fffaf1;
-  border: 1px solid #95989a;
+.persons {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 5 / 1 / 6 / 6;
+  height: 100%;
+  height: 8em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
 }
 
-.person#1 {
-  grid-area: 0.03333;
+.persons .person {
+  width: calc(1fr-8px);
+  height: 100%;
+  background: #fffaf1;
+  border: 1px solid #95989a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 7 / 1 / auto / 6;
+  background: url(/images/About.svg);
+  padding-top: 15px;
+  position: relative;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutSVG {
+  width: 100%;
 }
 
 .LinkCard .content {
@@ -226,12 +268,10 @@ a:any-link {
 }
 
 .LinkCard:before {
-  background-color: #A81E1C !important;
   border: #A81E1C solid 1px;
 }
 
 .LinkCard:after {
-  background-color: #DB3D3D !important;
   border: #A81E1C solid 1px;
 }
 

@@ -10,6 +10,8 @@ import Logo from "../components/logo";
 import styles from "./styles/index.module.css"
 import classNames from "classnames"
 
+import About from "../images/About.svg"
+
 
 
 console.log("styles :", {styles})
@@ -35,10 +37,18 @@ class IndexPage extends Component {
               <div className={styles.subTitle}>design</div>
               <div className={styles.subTitleAbout}>web. dev. studio</div>
               <div className={styles.subTitleSkills}>React - Node - Graphql - Headless CMS - Identity - UX UI</div>
+              
+              <div className={styles.persons}>
+                <div className={classNames([styles.person, styles.person1])}>Illya Fefelov</div>
+                <div className={classNames([styles.person, styles.person2])}>Dmytryi Vlasenko</div>
 
-              <div className="person" id="1"></div>
-              <div className="person" id="2"></div>
+              </div>
 
+              <div className={classNames([styles.about])}>
+                <About className={classNames([styles.aboutSVG])}/>
+              
+              </div>
+              
 
               
               
