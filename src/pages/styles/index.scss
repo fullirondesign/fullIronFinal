@@ -93,9 +93,13 @@ a:any-link {
 
 
 .image {
-  grid-area: 5 / span 2 / 7 / 9;
+  grid-area: 7 / 7 / 9 / 9;
   align-self: flex-end;
-  width: 300px;
+  width: 100%;
+  justify-self: flex-end;
+  position: relative;
+  right: -41px;
+  top: 2px;
 
   a:any-link {
     align-self: flex-end;
@@ -146,7 +150,7 @@ a:any-link {
   // background: url(/images/About.svg);
     
 
-    padding-top: 15px;
+    // padding-top: 15px;
     position: relative;
     // background: red;
     color: black;
@@ -164,10 +168,9 @@ a:any-link {
 
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='102%' style='fill: none; stroke: black; stroke-width: 3; stroke-dasharray: 8 2'/></svg>");
     & .aboutBottomContainer{
-      width: 100%;
       position: relative;
       // margin: 0 auto;
-      justify-self: end;
+      // justify-self: end;
       margin-top: auto;
       // height: 60px;
       // background-clip: content-box; 
@@ -177,9 +180,10 @@ a:any-link {
         height: 60px;
         width: 100%;
         align-self: end;
-        bottom: -27px;
+        bottom: -19.7px;
+        left: 0.7px;
         position: relative;
-        background-image: url("data:image/svg+xml;utf8,<svg id='Layer_1' viewBox='0 0 712 60' xmlns='http://www.w3.org/2000/svg' version='1.1'><path  d='M.11,36.06s1.33-.3,3.91-.84'/><path style='fill: none; stroke: black; stroke-width: 2; stroke-dasharray: 8 2' stroke-dashoffset='3'  d='M2,34.81C53.45,25,338.65-37.34,711.24,35'/><path class='cls-1' d='M712.23,35.19l3.91.87'/></svg>");
+        background-image: url("data:image/svg+xml;utf8,<svg id='Layer_1' viewBox='0 0 716.24 50.54' xmlns='http://www.w3.org/2000/svg' version='1.1'><path  d='M.11,36.06s1.33-.3,3.91-.84'/><path style='fill: none; stroke: black; stroke-width: 2; stroke-dasharray: 8 2' stroke-dashoffset='8'  d='M1,34.81C53.45,25,338.65-33.34,712.24,35'/><path class='cls-1' d='M712.24,35.19l3.91.87'/></svg>");
         background-position-y: center;
         background-repeat: no-repeat;
         background-clip: border-box;
@@ -203,7 +207,7 @@ a:any-link {
     }
     &Text {
       // grid-area: 7 / 1 / snan 4 / 6;
-      // text-align: center;
+      text-align: center;
       
     }
     &SVG {
@@ -213,6 +217,24 @@ a:any-link {
  
 
 
+  // Card section ------------
+  .postsTitle {
+    grid-area: 9 / 4 / 10 / 6;
+    @include titleSection;
+  }
+  .cardSection {
+     background: $colorWhite;
+     grid-area: 10 / 1 / 12 / 9;
+      height: 100%;
+      justify-content: center;
+      /* align-content: center; */
+      /* justify-items: center; */
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+
+  }
+// ----end of card section-------
 
 
 

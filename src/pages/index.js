@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React,  { useState } from 'react';
 import { Link } from "gatsby";
 
 import Layout from "../components/layouts/layout";
@@ -16,21 +16,26 @@ import classNames from "classnames";
 import About from "../images/About.svg";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
+import MyCard from "../components/Card/MyCard.js"
+
 console.log("styles :", { styles });
 
-class IndexPage extends Component {
-  state = {
-    aboutText:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ad fugit deleniti saepe!",
-    transformAbout: ""
-  };
+function IndexPage() {
+  // state = {
+  //   aboutText:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ad fugit deleniti saepe!",
+  //   transformAbout: ""
+  // };
 
-  handleTransformAbout = () => {
-    this.setState({ transformAbout: "scale(2 1.5)" });
-  };
+    const [aboutText, setAboutText]= useState("Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ad fugit deleniti saepe!");
+  const [transformAbout, setTransformAbout] = useState("");
 
-  render() {
-    const { aboutText, transformAbout } = this.state;
+//  function handleTransformAbout(){
+//     setTransformAbout("scale(2 1.5)");
+//   };
+
+  
+    
     console.log("index.js props", styles);
 
     return (
@@ -53,8 +58,9 @@ class IndexPage extends Component {
               Illya Fefelov
             </div>
             <div className={classNames([styles.person, styles.person2])}>
-              Dmytryi Vlasenko
+              more info
             </div>
+
           </div>
 
           {/* <About
@@ -93,10 +99,21 @@ class IndexPage extends Component {
             </Link>
             <Logo />
           </div>
+          <div className={classNames([styles.subTitle, styles.postsTitle])}>
+            Posts.
+          </div>
+        
+          <div className={styles.cardSection}>
+            
+            <MyCard />
+            <MyCard />
+            <MyCard >tateat </MyCard>
+          </div>
+
         </div>
       </Layout>
     );
-  }
+  
 }
 
 export default IndexPage;

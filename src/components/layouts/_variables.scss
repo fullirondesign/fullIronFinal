@@ -17,6 +17,7 @@ $colorGrey: grey;
 @mixin fontDisplaySub {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
+    font-weight: 500;
 }
 @mixin fontDisplay {
     font-family: 'Righteous', cursive;
@@ -24,6 +25,21 @@ $colorGrey: grey;
     font-size: 2.9em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+// Section Title-----
+@mixin titleSection {
+    text-align: start;
+    padding-left: .35em;
+    padding-top: .6em;
+    align-self: end;
+    font-weight: 600;
+    background: white;
+    color: $colorDark*1.5;
+    border: 1px solid $colorAccentDark;
+    @include fontDisplay;
+    font-size: 24px;  
+    
 }
 
 //standart link formating
