@@ -16,7 +16,7 @@ a:any-link {
   grid-row-gap: 16px;
   // grid-template-columns: 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286% 11.286%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 86px 52px 56px 56px 100px 100px 100px 220px 220px 100px 100px 100px 100px 100px 100px 100px 100px 100px ;
+  grid-template-rows: 86px 52px 56px 56px 100px 100px 100px 220px 220px 100px 100px 100px auto 100px 100px 100px 100px 100px ;
   // height: 100vh;
   // width: 100%;
   align-items: center;
@@ -232,6 +232,7 @@ a:any-link {
       align-items: center;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
 
   }
 // ----end of card section-------

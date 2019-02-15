@@ -18,7 +18,8 @@ html {
 
 body {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: auto auto !important;
+    position: relative;
     background: $colorMain !important;
     color:q $colorDark !important;
 }
