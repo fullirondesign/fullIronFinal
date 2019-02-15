@@ -107,7 +107,7 @@ function IndexPage() {
             
             <MyCard />
             <MyCard />
-            <MyCard >tateat </MyCard>
+            <MyCard > #tag #secondTag </MyCard>
           </div>
 
         </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|IBM+Plex+Sans:300,400,500,600,700|Raleway");
 
 
 
@@ -13,6 +13,23 @@ $colorGrey: grey;
 @mixin font {
     font-family: 'IBM Plex Serif', serif;
     
+}
+
+@mixin cardTitleText{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1.2em;
+    color: $colorDark;
+    text-transform: capitalize;
+    text-align: left;
+}
+@mixin cardTextText{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: .022em;
+    line-height: 1.7em;
+    font-size: 1em;
+    color: $colorAccentDark;
+    text-transform: capitalize;
 }
 @mixin fontDisplaySub {
     font-family: 'Raleway', sans-serif;

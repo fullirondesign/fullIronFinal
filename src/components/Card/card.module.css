@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Righteous:400,700|IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic|IBM+Plex+Sans:300,400,500,600,700|Raleway");
 .card {
   min-width: 245px;
+  max-width: 345px;
   min-height: 260px;
+  max-height: 260px;
   justify-items: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,9 +19,43 @@
   border-radius: 0px;
 }
 
+.cardChildren {
+  margin-left: .8rem !important;
+}
+
 .card .cardMedia {
-  background: grey;
+  background: #E27979;
   height: 150px;
   width: 100%;
+}
+
+.card .cardMedia:hover {
+  background: #A81E1C;
+  color: #FFFFFF;
+}
+
+.cardTitle {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.2em;
+  color: #422A26;
+  text-transform: capitalize;
+  text-align: left;
+  padding: .8rem;
+}
+
+.cardTitle:hover {
+  background: #A81E1C;
+  color: #FFFFFF;
+}
+
+.cardText {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: .022em;
+  line-height: 1.7em;
+  font-size: 1em;
+  color: #A81E1C;
+  text-transform: capitalize;
+  padding: .8rem;
 }
 /*# sourceMappingURL=card.module.css.map */
