@@ -11,6 +11,7 @@ function MyCard(props) {
   // 
   return (
     <Card className={styles.card}>
+    <div className={styles.cardMedia}></div>
     <div>{props.children}</div>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>

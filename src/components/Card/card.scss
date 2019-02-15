@@ -1,8 +1,18 @@
 @import '../../components/layouts/variables';
 
 .card {
-    background: $colorGrey;
+    background: grey;
     min-width: 245px;
-    height: 200px;
-    // display: flex;
+    min-height: 260px;
+    justify-items: end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: .3rem;
+    border-radius: 0px;
+    .cardMedia {
+        background: grey;
+        height: 150px;
+        width: 100%;
+    }
 };
