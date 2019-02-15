@@ -8,6 +8,8 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
+  background: #FFFAF1 !important;
+  color: q #422A26 !important;
 }
 
 .font {
